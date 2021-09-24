@@ -20,6 +20,7 @@ header {
   background-color: #000000;
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #131211 0%, #000000 74%);
+
   width: 100vw;
   height: 100vh;
 }
@@ -34,7 +35,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to right, #8f6b29, #fde08d, #df9f28);
+  /* background-image: linear-gradient(to right, #8f6b29, #fde08d, #df9f28); */
   z-index: 1000;
 }
 .nav_logo{
@@ -55,6 +56,11 @@ nav ul {
 }
 nav ul li {
   justify-content: space-evenly;
+  padding: 1rem;
+  border-radius: 50px;
+  background-image: linear-gradient(to bottom right, #8f6b29, #fde08d, #df9f28);
+
+
 }
 .black{
   color:black;
@@ -148,7 +154,7 @@ main {
   flex-direction: column;
   height: 70vh;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
 }
 .content_suggestor-heading {
   height: 10vh;
@@ -211,48 +217,91 @@ img {
 }
 
 .imp{
-  height:90vh;
-  width: 100vw;
-  background-color: #333;
+  /* height:90vh;
+  width: 100vw; */
+  background-color: #000;
   /* background-image: linear-gradient(to right, #8f6b29, #fde08d, #df9f28); */
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   flex-grow: 0;
-  flex-wrap: wrap;
-}
+  overflow-x: auto;
+  margin-bottom: 5vh;
 
+}
+.imp::-webkit-scrollbar {
+  display: none;
+}
 .imp_heading{
-  height:10vh;
-  width:100vw;
-  background-image: linear-gradient(to right, #8f6b29, #fde08d, #df9f28);
+  height:15vh;
+  width:99vw;
+  display: flex;
+  flex-shrink: 0;;
+  justify-content: center;
+  align-items: center;
+  /* font-family: "Qahiri", sans-serif; */
+  font-size: 3rem;
+  /* background-image: linear-gradient(to right, #8f6b29, #fde08d, #df9f28); */
 
 }
-
+.imp_heading::-webkit-scrollbar {
+  display: none;
+}
 .imp_content{
-  height:80vh;
-  width:100vw;
+  /* height:80vh; */
+  width:99vw;
   display: flex;
-  align-content: center;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  overflow-x: auto;
+  /* background-color: #0ff; */
+}
+
+.imp_content::-webkit-scrollbar {
+  display: none;
 }
 .imp_content_item{
-  width:30vw;
+  width:22vw;
   height:40vh;
+  /* background-color: #ff0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
 }
-.imp_image{
-  min-height: 5rem;
-  min-width: 5rem;
-  max-height: 5rem;
-  max-width: 5rem;
+.imp_content_item::-webkit-scrollbar {
+  display: none;
+}
+.imp_image_content{
+  min-height: 15rem;
+  min-width: 15rem;
+  max-height: 15rem;
+  max-width: 15rem;
+  filter: invert(1);
+  /* background-color: #d4af37; */
+}
+.imp_title{
+  font-family: "Qahiri", sans-serif;
+  font-size: 5rem; 
+}
+
+.gradient-text {
+  background-color: #d4af37;
+  background-image: linear-gradient(to right, #8f6b29, #fde08d, #df9f28);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 
 
-
-
-
-
-
+.gradient-line{
+  height: 0.5vh;
+  background-image: linear-gradient(to right, #8f6b29, #fde08d, #df9f28);
+}
 
 
 
